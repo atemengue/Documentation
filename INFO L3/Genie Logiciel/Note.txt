@@ -1,0 +1,22 @@
+Types of design
+ >_ Logical design
+ >_ conceptual design
+ >_ physical design
+About Planing face
+ >_ here we ask question or interview to know the existing and  
+	what you must add to the sytem
+ >_ About System boundary
+	Here we talk "Les limites de notre systeme"
+ >_ About functional requirements of the systemes.
+	Here we talk about "Les fonctionalités du systeme"
+ >_ About non functional requirements
+	Here we talk about the properties that we use to mesure the
+	system performence
+	* maintenability
+	* usability
+ >_ About exam
+	* Explain in details how the compexity of project???
+	* Explain more about separation of concerns an the modularity
+	  apply on ID Card managment system
+	* give the software process mother
+

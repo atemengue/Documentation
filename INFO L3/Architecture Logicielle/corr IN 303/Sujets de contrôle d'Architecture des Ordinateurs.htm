@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML//EN">
+<html><head>
+<!-- base href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/" -->
+
+<title>Sujets de contrôle d'Architecture des Ordinateurs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<meta name="KEYWORDS" content="Architecture, Ordinateurs, Assembleur, Langage machine, 8086, PC, Bus, Cours, Programmation, Langage, Informatique industrielle, Interface Série, Cours, Exercices, Exercice, TD, Travaux dirigés, bibliographie, IUT, DUT, GTR, Télécommunications, Réseaux, Villetaneuse, Viennet, Voisin, Apprentissage">
+<meta name="DESCRIPTION" content="Enseignement de l'architecture des ordinateurs a partir ce l'etude du PC, à l'IUT de Villetaneuse.">
+</head>
+<body topmargin="0" leftmargin="0" link="#008080" marginheight="0" marginwidth="0" text="#000000" vlink="#000080" alink="#996600" background="Sujets%20de%20contr%C3%B4le%20d'Architecture%20des%20Ordinateurs_files/bits.jpg" bgcolor="#FFFFFF">
+<!-- start of page table -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<!-- start of banner row -->
+<tbody><tr>
+<!-- start of corner cells -->
+ <td valign="CENTER" width="150" bgcolor="black">
+ <center><img src="Sujets%20de%20contr%C3%B4le%20d%27Architecture%20des%20Ordinateurs_files/gearanim.gif">
+</center> </td>
+
+ <td width="15" bgcolor="#dbc8ba">&nbsp;&nbsp;</td><!-- spacer -->
+<!-- end of corner cells -->
+
+<!-- start of banner -->
+ <td width="90%" bgcolor="#dbc8ba">
+
+ <!-- start of site links table -->
+  
+<table cols="3" rows="3" width="100%" bgcolor="#dbc8ba" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+
+<td>
+<table border="0" cellpadding="0" cellspacing="0"> <!-- column 1 -->
+<tbody><tr>    <td bgcolor="#dbc8ba">
+<a href="https://www-gtr.iutv.univ-paris13.fr/"><font>Page d'accueil R&amp;T</font></a>
+</td></tr>
+
+<tr>  <td bgcolor="#dbc8ba">
+<a href="http://www.iutv.univ-paris13.fr/" target="NEW"><font>IUT de Villetaneuse</font></a>
+    </td></tr>
+
+
+<tr>    <td bgcolor="#dbc8ba">
+<a href="http://www.univ-paris13.fr/" target="NEW"><font>Université Paris 13</font></a>
+    </td></tr>
+
+</tbody></table>
+</td>
+
+<td>
+<table border="0" cellpadding="0" cellspacing="0"> <!-- column 2 -->
+<tbody><tr> <td bgcolor="#dbc8ba">
+<a href="https://www-gtr.iutv.univ-paris13.fr/Departement">Département</a>
+    </td></tr>
+
+<tr> <td bgcolor="#dbc8ba">
+<a href="https://www-gtr.iutv.univ-paris13.fr/Equipe"><font>Equipe</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www-gtr.iutv.univ-paris13.fr/Cours">Cours</a>
+    </td></tr>
+
+<tr> <td bgcolor="#dbc8ba">
+<a href="https://www-gtr.iutv.univ-paris13.fr/Dept">Intranet</a>
+    </td></tr>
+</tbody></table>
+</td>
+
+<td>
+<table border="0" cellpadding="0" cellspacing="0"> <!-- column 3 -->
+<tbody><tr> <td bgcolor="#dbc8ba">
+<a href="https://www-gtr.iutv.univ-paris13.fr/Departement">Formation Initiale</a>
+    </td></tr>
+
+<tr> <td bgcolor="#dbc8ba">
+<a href="https://www-gtr.iutv.univ-paris13.fr/Departement/FC">Formation Continue</a>
+    </td></tr>
+
+<tr> <td bgcolor="#dbc8ba">
+<a href="https://www-gtr.iutv.univ-paris13.fr/Departement/Apprentissage">Apprentissage</a>
+    </td></tr>
+</tbody></table>
+</td>
+
+<td>
+<table border="0" cellpadding="0" cellspacing="0"> <!-- column 4 -->
+
+<tbody><tr><td>
+<a href="http://www.iutv.univ-paris13.fr/" target="NEW"><img src="Sujets%20de%20contr%C3%B4le%20d%27Architecture%20des%20Ordinateurs_files/logoIUTb_transp.gif" alt="" title="" height="48" width="108" border="0"></a>
+</td></tr>
+</tbody></table>
+
+
+
+</td></tr>
+</tbody></table>
+
+
+
+ <!-- end of site links table -->
+
+ </td><!-- end of banner -->
+</tr><!-- end of banner row -->
+
+<tr><!-- start of sidebar/body row -->
+<!-- start of sidebar cells -->
+<td valign="TOP" width="150" bgcolor="#dbc8ba">
+<!-- start of sidebar table -->
+ <table width="100%" bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="0">
+<tbody><tr><td bgcolor="#8c7e7b">
+    <center><b><font color="white">
+    Architecture des ordinateurs
+    </font></b></center>
+</td></tr>
+
+<tr><td bgcolor="#dbc8ba">
+    <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/">Présentation</a>
+</li></td></tr>
+
+<tr><td bgcolor="#dbc8ba">
+    <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Cours">Cours</a>
+</li></td></tr>
+
+<tr><td bgcolor="#dbc8ba">
+    <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/TDTP">TDs</a>
+</li></td></tr>
+
+<tr><td bgcolor="#dbc8ba">
+    <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams">Contrôles</a>
+</li></td></tr>
+
+<tr><td bgcolor="#dbc8ba">&nbsp;</td></tr>
+
+<tr><td bgcolor="#8c7e7b">
+    <center><b><font color="white">Contact matière</font></b><center>
+</center></center></td></tr>
+<tr><td bgcolor="#dbc8ba">
+   <a href="mailto:mathias.voisin@iutv.univ-paris13.fr">email</a>
+</td></tr>
+
+<tr><td bgcolor="#dbc8ba">&nbsp;</td></tr>
+
+<tr><td bgcolor="#dbc8ba">
+   <a href="http://www-gtr.iutv.univ-paris13.fr/Cours/About">
+   <center><img src="Sujets%20de%20contr%C3%B4le%20d%27Architecture%20des%20Ordinateurs_files/smallpolar_img.jpg" border="0"></center>
+   </a>
+</td></tr>
+
+</tbody></table>
+
+<!-- end of sidebar table -->
+
+</td>
+<td width="15">&nbsp;&nbsp;</td><!--spacer-->
+<!-- end of sidebar cell -->
+<!-- start of body cell -->
+<td valign="TOP" width="95%"><br>
+
+<!-- start of archi header -->
+
+<h2>Architecture des ordinateurs</h2>
+<!-- end of archi header -->
+
+
+<h3><font color="brown">Annales (sujets d'examens)</font></h3>
+
+<p>Voici les sujets qui ont servi à l'évaluation des élèves.
+Vous avez ici la version distribuée qui peut servir d'exercice
+et la version corrigée pour vérifier.
+</p><p>Malgré plusieurs relectures, il peut demeurer des erreurs.
+</p><p>Vous pouvez lire ces documents avec
+<a href="http://www.adobe.com/products/acrobat/readstep.html">Acrobat Reader</a>
+ou avec <a href="http://www.cs.wisc.edu/%7Eghost/">GhostView</a>
+(logiciels gratuits, téléchargeables).
+</p><p>Idéalement pour vous faire une meilleure idée du niveau,
+il faudrait vous présenter le résultat avec les barèmes et les notes obtenues.
+C'est en cours d'étude.
+
+</p><ul>  <li>Sujets 2000-2001</li>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2000-10-26.Sujet.pdf">
+          Contrôle Court n°1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2000-10-26.correction.pdf">
+          Correction CC1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2000-11-30.Sujet.pdf">
+          Contrôle Long n°1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2000-11-30.correction.pdf">
+          Correction CL1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2001-01-18.Sujet.pdf">
+          Contrôle Court n°2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2001-01-18.correction.pdf">
+          Correction CC2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2001-02-01.Sujet.pdf">
+          Controle de TP</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2001-02-01.correction.txt">
+          Correction CTP</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2001-03-08.Sujet.pdf">
+          Contrôle Long n°2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2000/ArchiCtrl.2001-03-08.correction.pdf">
+          Correction CL2</a></li>
+    </ul>
+    <li>Sujets 2001-2002</li>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2001-10-18.Sujet.pdf">
+          Contrôle Court n°1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2001-10-18.correction.pdf">
+          Correction CC1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2001-11-29.Sujet.pdf">
+          Contrôle Long n°1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2001-11-29.correction.pdf">
+          Correction CL1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2002-01-17.Sujet.pdf">
+          Contrôle Court n°2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2002-02-07.Sujet.pdf">
+          Contrôle TP sur machine</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2002-03-07.Sujet.pdf">
+          Contrôle Long n°2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2002-03-07.correction.pdf">
+          Correction CL2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2002-03-07.tp.Sujet.pdf">
+          Contrôle TP sur table</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2001/ArchiCtrl.2002-03-07.tp.correction.pdf">
+          Correction CTT</a></li>
+    </ul>
+    <li>Sujets 2002-2003</li>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2002-12-19.Sujet.pdf">
+          Contrôle Court n°1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2002-12-19.correction.pdf">
+          Correction CC1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2003-01-30.Sujet.pdf">
+          Contrôle Court n°2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2003-01-30.correction.pdf">
+          Correction CC2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2003-03-06.Sujet.pdf">
+          Contrôle Long n°1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2003-03-06.correction.pdf">
+          Correction CL1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2003-04-03.Sujet.pdf">
+          Contrôle Court n°3</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2003-04-03.correction.pdf">
+          Correction CC3</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2003-06-05.Sujet.pdf">
+          Contrôle Long n°2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2002/ArchiCtrl.2003-06-05.correction.pdf">
+          Correction CL2</a></li>
+    </ul>
+    <li>Sujets 2003-2004</li>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2003-10-08.Sujet.pdf">
+          Contrôle Court n°1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2003-10-08.correction.pdf">
+          Correction CC1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2003-10-08.resultat.txt">
+          Barème et résultat</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2003-12-18.Sujet.pdf">
+          Contrôle Long n°1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2003-12-18.correction.pdf">
+          Correction CL1</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2003-12-18.resultat.txt">
+          Barème et résultat</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2004-02-12.Sujet.pdf">
+          Contrôle Court n°2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2004-02-12.correction.pdf">
+          Correction CC2</a></li>
+    </ul>
+      <ul>
+      <li><a href="https://www-gtr.iutv.univ-paris13.fr/Cours/Mat/Architecture/Exams/2003/ArchiCtrl.2004-03-04.Sujet.pdf">
+          Contrôle Long n°2</a></li>
+    </ul>
+  </ul>
+
+<!-- footer Ens/Pyt -->
+</td><!-- end of body cell -->
+</tr><!-- end of sidebar/body row -->
+</tbody></table><!-- end of page table -->
+
+</body></html>

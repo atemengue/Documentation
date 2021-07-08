@@ -1,0 +1,12 @@
+/* definitions des faits
+ * aime(argument1,arguments2)
+*/
+aime(jean,marie).
+aime(jean,paris).
+aime(marie,paris).
+aine(anne,bretagne).
+aime(paul,marie).
+aime(marie,paul).
+aime(jean,peche).
+aime(paul,biere).
+roi(tintin,belgique).

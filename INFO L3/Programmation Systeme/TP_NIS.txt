@@ -1,0 +1,10 @@
+Dans l'introduction, il faut parler de la nécessite d'une gestion
+centralisée des comptes. Il faut donner les différentes techniques de
+gestion centralisée des comptes utilisateur. Ensuite présenter NIS et
+son fonctionnement et sa configuration.
+La présentation du projet aura une phase d'exposé de 5
+min max et une phase de démonstration de 5 min également. Soyez
+précis, concis et convainquant.
+
+Bon courage
+Adamou Hamza
